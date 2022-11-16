@@ -1,0 +1,200 @@
+$brand-color: rgba(255, 204, 0, 1);
+$text-color: rgba(102, 102, 102, 1);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
+body {
+  padding: 60px calc((100vw - 1170px)/2) 0px;
+}
+.header {
+  text-align: center;
+  color: $brand-color;
+
+  &__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(137, 143, 143, 1);
+    margin-bottom: 13px;
+  }
+
+  &__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 450px;
+      height: 1px;
+      background-color: $brand-color;
+      bottom: -39px;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      background: url('photo/bonfire-sharp 1.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: white;
+      width: 30px;
+      height: 30px;
+      bottom: -55px;
+      left: 50%;
+      transform: translateX(-50%);      
+    }
+  }
+}
+
+._container {
+  display: flex;
+  margin-top: 90px;
+}
+
+.photo-block {
+  width: 50%;
+  padding-top: 64px;
+  padding-left: 62px;
+  border-right: 1px solid $brand-color;
+
+  &__wrapper {
+    border: solid 1px $brand-color;
+    padding: 14px;
+    position: relative;
+    width: 430px;
+    height: 430px;
+
+    &::before, &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 434px;
+      height: 230px;
+      background-color: white;
+      left: -3px;
+      top: 99px;
+    }
+    &::after {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    border: 1px solid $brand-color;
+    width: 400px;
+    height: 400px;
+    object-fit: none;
+    display: block;
+    z-index: 1;
+  }
+}
+
+.profile {
+  text-align: center;
+  padding: 68px 70px 0px 93px;
+  width: 50%;
+
+  &__name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 36px;
+    color: $text-color;
+    margin-bottom: 54px;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 100px;
+      height: 1px;
+      background-color: $brand-color;
+      display: block;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -20px;
+    }
+    
+  }
+
+  &__position {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: $text-color;
+    margin-bottom: 26px;
+  }
+  &__socials {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  &__social {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #CCCCCC;
+    border-radius: 50%;
+    color: rgba(204, 204, 204, 1);
+    text-decoration: none;
+    padding-top: 6px;
+
+  }
+
+  &__bio {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(51, 51, 51, 1);
+    margin-bottom: 45px;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 50px;
+      display: block;
+      position: absolute;
+      border-bottom: 4px dashed $brand-color;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -20px;
+    }
+
+    &::after {
+      content: '';
+      width: 20px;
+      display: block;
+      position: absolute;
+      border-bottom: 4px dashed $brand-color;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -20px;
+    }
+  }  
+
+  &__button {
+    padding: 3px 8px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;  
+    color: $text-color;
+    background-color: white;
+    border: 1px solid $brand-color;
+  }
+}

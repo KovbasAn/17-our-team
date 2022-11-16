@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 60px calc((100vw - 1170px) / 2) 0px;
+}
+
+.header {
+  text-align: center;
+  color: rgb(255, 204, 0);
+}
+.header__subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+  color: rgb(137, 143, 143);
+  margin-bottom: 13px;
+}
+.header__title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  text-transform: uppercase;
+  position: relative;
+}
+.header__title::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 450px;
+  height: 1px;
+  background-color: rgb(255, 204, 0);
+  bottom: -39px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.header__title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url("photo/bonfire-sharp 1.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 30px;
+  height: 30px;
+  bottom: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+._container {
+  display: flex;
+  margin-top: 90px;
+}
+
+.photo-block {
+  width: 50%;
+  padding-top: 64px;
+  padding-left: 62px;
+  border-right: 1px solid rgb(255, 204, 0);
+}
+.photo-block__wrapper {
+  border: solid 1px rgb(255, 204, 0);
+  padding: 14px;
+  position: relative;
+  width: 430px;
+  height: 430px;
+}
+.photo-block__wrapper::before, .photo-block__wrapper::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 434px;
+  height: 230px;
+  background-color: white;
+  left: -3px;
+  top: 99px;
+}
+.photo-block__wrapper::after {
+  transform: rotate(90deg);
+}
+.photo-block__image {
+  position: absolute;
+  border: 1px solid rgb(255, 204, 0);
+  width: 400px;
+  height: 400px;
+  -o-object-fit: none;
+     object-fit: none;
+  display: block;
+  z-index: 1;
+}
+
+.profile {
+  text-align: center;
+  padding: 68px 70px 0px 93px;
+  width: 50%;
+}
+.profile__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 54px;
+  position: relative;
+}
+.profile__name::after {
+  content: "";
+  width: 100px;
+  height: 1px;
+  background-color: rgb(255, 204, 0);
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+.profile__position {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: rgb(102, 102, 102);
+  margin-bottom: 26px;
+}
+.profile__socials {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.profile__social {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #CCCCCC;
+  border-radius: 50%;
+  color: rgb(204, 204, 204);
+  text-decoration: none;
+  padding-top: 6px;
+}
+.profile__bio {
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgb(51, 51, 51);
+  margin-bottom: 45px;
+  position: relative;
+}
+.profile__bio::before {
+  content: "";
+  width: 50px;
+  display: block;
+  position: absolute;
+  border-bottom: 4px dashed rgb(255, 204, 0);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+.profile__bio::after {
+  content: "";
+  width: 20px;
+  display: block;
+  position: absolute;
+  border-bottom: 4px dashed rgb(255, 204, 0);
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+}
+.profile__button {
+  padding: 3px 8px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  color: rgb(102, 102, 102);
+  background-color: white;
+  border: 1px solid rgb(255, 204, 0);
+}/*# sourceMappingURL=style.css.map */
